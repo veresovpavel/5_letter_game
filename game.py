@@ -82,7 +82,7 @@ def play_game(words, letters_frq):
         print("Letters in your word: ", letters_incl)
         game_words = letters_in(letters_incl, game_words)
         if len(game_words) == 1:
-            print("your word is: ", game_words[0], "; Tries to guess: ", num_tries + 1, sep='')
+            print("Your word is: ", game_words[0], "; Tries to guess: ", num_tries + 1, sep='')
             break
         for v in suggested_word:
             if v not in l_in:
@@ -90,7 +90,7 @@ def play_game(words, letters_frq):
         print("Letters not in your word: ", letters_ex)
         game_words = letters_out(letters_ex, game_words)
         if len(game_words) == 1:
-            print("your word is: ", game_words[0], "; Tries to guess: ", num_tries + 1, sep='')
+            print("Your word is: ", game_words[0], "; Tries to guess: ", num_tries + 1, sep='')
             break
         l_pos = input("Print letters on right positions, separated by _ if no letter in position: ")
         if l_pos == suggested_word:
@@ -110,7 +110,7 @@ def play_game(words, letters_frq):
         num_tries += 1
     else:
         if len(game_words) == 1:
-            print("your word is: ", game_words[0], "; Tries to guess: ", num_tries)
+            print("Your word is: ", game_words[0], "; Tries to guess: ", num_tries)
         else:
             print(f"you made a mistake playing this game: \n"
                   f"your word looks like {letter_pos}\n"
